@@ -5,3 +5,5 @@ if (2>1) {
     console.log("Inside if block: " + lang  );
 }   
 console.log("Outside if block: " + lang);
+let num = 10;
+l

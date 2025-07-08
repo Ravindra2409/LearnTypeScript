@@ -1,4 +1,4 @@
-let anum: number = 10
+/*let anum: number = 10
 let num2 = 30.01
 1. //By using typeof operator we can find the type of variable
 console.log("Number 1: " + typeof anum);
@@ -7,7 +7,7 @@ console.log("Number 2: " + typeof num2);
 Examples of String Types in TypeScript
 String types can be defined using single quotes, double quotes, or backticks (template literals)
 */
-
+/*
 let str1: string = "Hello, TypeScript!";
 let str2 = 'Single quotes also work';
 let str3: string = `Template literals allow embedding variables: ${anum}`;
@@ -54,13 +54,65 @@ function printId(id: number | string) {
 
 printId(12345);
 printId("abc123");
-/*
-It looks like 'git' is not installed or not recognized in your system's PATH.
-
-To resolve this:
-1. Download and install Git from: https://git-scm.com/downloads
-2. After installation, restart your terminal or command prompt.
-3. Verify installation by running: git --version
-
-Once Git is installed, you can follow the previous steps to set up your repository and push your code to GitHub.
 */
+let c=10
+console.log("c: " + ++c);
+// Arithmetic Operators
+let a = 10;
+let b = 3;
+console.log("Addition (a + b):", a + b);           // 13
+console.log("Subtraction (a - b):", a - b);        // 7
+console.log("Multiplication (a * b):", a * b);     // 30
+console.log("Division (a / b):", a / b);           // 3.333...
+console.log("Modulus (a % b):", a % b);            // 1
+console.log("Exponentiation (a ** b):", a ** b);   // 1000
+
+// Assignment Operators
+let c1 = 5;
+c1 += 2; // c1 = c1 + 2
+console.log("After += :", c1);                     // 7
+c1 -= 1; // c1 = c1 - 1
+console.log("After -= :", c1);                     // 6
+
+// Comparison Operators
+let x = 5;
+let y = '5';
+console.log("x == y:", x == y);                    // true (type coercion)
+console.log("x === y:", x === y);                  // false (strict equality)
+console.log("x != y:", x != y);                    // false
+console.log("x !== y:", x !== y);                  // true
+console.log("x > 3:", x > 3);                      // true
+console.log("x < 3:", x < 3);                      // false
+console.log("x >= 5:", x >= 5);                    // true
+console.log("x <= 4:", x <= 4);                    // false
+
+// Logical Operators
+let isLoggedIn = true;
+let isAdmin = false;
+console.log("AND (isLoggedIn && isAdmin):", isLoggedIn && isAdmin); // false
+console.log("OR (isLoggedIn || isAdmin):", isLoggedIn || isAdmin);  // true
+console.log("NOT (!isAdmin):", !isAdmin);                           // true
+
+// Bitwise Operators
+let bitA = 2; // 10 in binary
+let bitB = 3; // 11 in binary
+console.log("Bitwise AND (bitA & bitB):", bitA & bitB); // 2
+console.log("Bitwise OR (bitA | bitB):", bitA | bitB);  // 3
+console.log("Bitwise XOR (bitA ^ bitB):", bitA ^ bitB); // 1
+console.log("Bitwise NOT (~bitA):", ~bitA);             // -3
+console.log("Left Shift (bitA << 1):", bitA << 1);      // 4
+console.log("Right Shift (bitB >> 1):", bitB >> 1);     // 1
+
+// Ternary Operator
+let age = 18;
+let canVote = age >= 18 ? "Yes" : "No";
+console.log("Can vote?", canVote);                      // Yes
+
+// Typeof Operator
+let value = "Hello";
+console.log("Type of value:", typeof value);             // string
+
+// Instanceof Operator
+class Person {}
+let p = new Person();
+console.log("p instanceof Person:", p instanceof Person); // true
