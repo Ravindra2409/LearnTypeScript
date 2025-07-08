@@ -116,3 +116,20 @@ console.log("Type of value:", typeof value);             // string
 class Person {}
 let p = new Person();
 console.log("p instanceof Person:", p instanceof Person); // true
+
+// Example of Union Types
+let data: number | string;
+
+data = 123;
+console.log("Union example (number):", data, "| Type:", typeof data);
+
+data = "TypeScript";
+console.log("Union example (string):", data, "| Type:", typeof data);
+
+// Union type in function parameter
+function display(value: number | string) {
+    console.log("Display value:", value, "| Type:", typeof value);
+}
+
+display(456);
+display("Union type function");
